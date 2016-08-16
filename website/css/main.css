@@ -1,0 +1,321 @@
+/* CSS for all pages, headers, and footers, on the site */
+
+body, html, section, div, header, footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: rgba(18,48,53,.9);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  padding: 1.3em 0 1.3em 0;
+}
+
+a:hover {
+  color: #CE80A4;
+}
+
+header, section, footer, div {
+  box-sizing: border-box;
+}
+
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+
+header {
+  width: 100%;
+}
+
+#content {
+  padding-bottom: 99px;
+}
+
+footer {
+  width: 100%;
+  height: 99px;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+.flex_box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex_space {
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+}
+
+.flex_between {
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+}
+
+.clear_fix {
+      overflow: auto;
+    }
+
+.fullwidth {
+  width: 100%;
+}
+
+.sides {
+  border-left: 5px solid rgba(18,48,53,.9);
+  border-right: 5px solid rgba(18,48,53,.9);
+ }
+
+
+/* Color Scheme */
+
+    /* Background Colors */
+
+.darkgray {background-color: rgba(18,48,53,.9);}
+
+.green {background-color: rgba(65,153,40,.75);}
+
+.red {background-color: rgba(143,76,104,.7);}
+
+.blue {background-color: rgba(25,149,165,.6);}
+
+.brown {background-color: #AA7552;}
+
+    /* Text Colors */
+
+.white_text {
+  color:white;
+}
+
+.darkgray_text {
+  color: rgba(18,48,53,.9);
+}
+
+.brown_text {
+  color: #AA7552;
+  text-transform: uppercase;
+}
+
+/* Header */
+
+#header_padding {
+  padding: 2% 5% 1% 5%;
+}
+
+ #header_logo_roles {
+    width: 100%;
+  }
+
+#header_logo {
+  width: 100%;
+}
+
+#header_name {
+  font-size: 22px;
+  padding-top: 6px;
+  display: inline-block;
+}
+
+#header_logo2 {
+  display: none;
+}
+
+#header_logo_size {
+      float: right;
+      max-height: 30px;
+  }
+
+#header_roles {
+  width: 100%;
+  font-size: 14px;
+  order:1;
+      padding-top: 0.3em;
+}
+
+#header_break {
+  order: 3;
+}
+
+
+/* Footer */
+
+
+
+#lets_connect {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+  padding: 3px 0 3px 0;
+}
+
+#footerContacts {
+  font-size: 12px;
+    padding: 12px 0 12px 0;
+}
+
+.footer_item {
+  text-decoration: none;
+  padding: 5px 5px 5px 5px;
+}
+
+.footer_label {
+  padding: 0 5px 0 0;
+}
+
+@media screen and (min-width: 450px) {
+
+  #header_logo_size {
+    display: none;
+  }
+
+  #header_logo_roles {
+    width: 70%;
+  }
+  #header_logo2 {
+    display: block;
+    order:2;
+    width: 30%;
+  }
+
+  #header_logo_size2 {
+    max-height: 44px;
+    float: right;
+    padding-top: 9px;
+  }
+
+}
+
+@media screen and (min-width: 586px) {
+  #header_logo {
+    max-height: 36px;
+  }
+
+  #header_name {
+    font-size: 28px;
+  }
+
+  #header_roles {
+    width: 80%;
+  }
+
+   #header_logo_size2 {
+    max-height: 50px;
+      padding-top: 6.5px;
+  }
+
+  #content {
+    padding-bottom: 74px;
+  }
+
+  footer {
+    height: 74px;
+}
+
+
+
+}
+
+@media screen and (min-width: 769px) {
+
+  #header_roles {
+ /*   font-size: 16px;*/
+    width: 70%;
+  }
+
+  #lets_connect {
+    font-size: 18px;
+  }
+
+  #footerContacts {
+  font-size: 15px;
+}
+
+  #header_logo_size2 {
+      padding-top: 4.5px;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+#header_name {
+  font-size: 44px;
+}
+
+#header_logo {
+  display: inline-block;
+  width: auto;
+}
+
+  #header_logo_roles {
+    width: 85%;
+  }
+
+  #header_logo2 {
+    width: 15%;
+  }
+
+#header_roles {
+  width: 100%;
+}
+
+#header_roles span {
+  padding: 0 5px 0 10px;
+}
+
+#roles_outer {
+display: inline-block;
+width: auto;
+ }
+
+#wrapper {
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+  #header_logo_size2 {
+      padding-top: 0.5px;
+  }
+
+
+}
+
+
+
